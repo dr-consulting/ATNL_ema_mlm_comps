@@ -1,0 +1,105 @@
+---
+title: "Introduction"
+author: "Matthew Barstead, Ph.D."
+date: "7/19/2020"
+output: html_document
+---
+# Introduction
+- 1-3 Paragraphs per chapter (will probably finish last)
+
+## Part I 
+
+### Chapter 1 - The linear model 
+- Review of the basic assumptions
+- What happens when we violate those assumptions
+- Nesting within naturally occurring groups
+- Nesting within experimental groups 
+- Nesting within individuals
+
+### Chapter 2 - Generalzied Linear Models: Dealing with Naturally Skewed, Count and Ordinal Outcomes
+- Psychopathology ratings/scores
+- Count (Poisson & Negative Binomial)
+- Ordinal (Cumulative Distribution Link Functions)
+
+### Chapter 3 - Generalized Linear Models: Predicting Categories
+- Binary data
+- Mutinomial
+
+### Chapter 4
+- First and Second Moments of Repeated Measures Distributions
+    - [Dejonckheere et al., 2019](https://www.nature.com/articles/s41562-019-0555-0)
+    - [Houben et al., 2015](https://ppw.kuleuven.be/okp/_pdf/Houben2015TRBST.pdf)
+- Non-linear Models
+    - [Kira et al., 2019](https://www.scirp.org/html/2-6902926_96985.htm)
+    - [Guastello, 2013](https://link.springer.com/chapter/10.1007/978-1-4614-4998-0_9#citeas)
+- Time-series Analyses
+    - [Ghiasi et al., 2020](https://www.nature.com/articles/s41598-020-62225-2)
+    - [Puterman et al., 2020](https://www.pnas.org/content/117/28/16273)
+
+## Part II
+
+### Chapter 5 The Basics - A Multilevel Model with Random Intercepts
+- Fancy Name for an ANOVA 
+- The statistical model 
+- Translating the statiscal model to code
+- Checking model assumptions
+- ANCOVA and Model Comparisons
+
+### Chapter 6 A Small Step Forward - Introducing Random Slopes
+- Moving Past the ANOVA 
+- The statistical model
+- Random Effects Covariance Matrix and [Decomposition](https://psycnet.apa.org/record/2018-32178-001)
+- Centering Choices 
+- Adding Covariates/Predictors
+- Checking model assumptions
+
+### Chapter 7 - "Growth" Models
+- The special properties of time as a variable
+- Centering 
+- Effects on Random Covariance/Correlation Matrix
+- RCT/Experiments with Repeated Measures
+- Non-linear change
+- "lagged" predictors
+
+### Chapter 8 - Structural Equation Models 
+- SEM Crash Course: Path Models, Fit Indices, "Latent" variables
+- Multilevel Factor Analysis - Structure and Theory
+- SEM version of a Growth Model
+- Parallel Growth Processes 
+- Inflection Point Detection Models
+- Convergence Point Detection Models
+- Further Reading
+
+### Chapter 9 - Complex Nesting Structures
+- Adding a third "level" to a model
+- The statistical model
+- Translating to Code
+- Understanding the Multiple Random Effect Covariance Matrices
+- Cross-nested structures
+- Individuals, Measured over Time, Nested within groups
+
+### Chapter 10 Interpreting your Model - Picture > Words
+- Stacked barplots (boo!!) Riverplots (yay!!)
+- When the Random effects are the interesting part of the model - catepillar plots
+- Be certain to include your uncertainty 
+
+## Part III 
+
+### Chapter 11 Thomas Bayes - Rolls up his sleeves
+- Philosophical and theoretical distinctions between Frequentist and Bayesian 
+- The mechanics change but the syntax remains the same
+- Setting reasonable priors
+- Assessing model performance
+- Why multilevel models have a naturally Bayesian Form
+- Pros and cons 
+- Further Reading
+
+### Chapter 12 (Optional) - Resources for Plotting Results of Bayesian Models
+
+### Chapter 13 SEM Advanced Time-Series Analyses
+- Latent Change Score Models
+- Non-linear change in SEM
+- Change as a mediator in SEM
+- Multivariate Bayesian Multilevel Regression
+
+### Chapter X - Meta Analyses - "Variance Known" MLMs (stretch - may remove)

@@ -1,0 +1,28 @@
+---
+title: "Preface"
+author: "Matthew Barstead, Ph.D."
+output: html_document
+---
+# Preface 
+
+## Why Every Model Will Soon Be A Multilevel Model
+
+## Getting Started 
+
+### Installation and Technical Setup
+- R 
+- RStudio
+- Stan (special instructions for Windows)
+- `tidyverse` vs. "base" `R`
+- Git - up to user to decide how (expand on README.md instructions)
+
+### Coding Style 
+- [Advanced R - Style Guide](http://adv-r.had.co.nz/Style.html)
+- [WET and DRY code](https://dev.to/wuz/stop-trying-to-be-so-dry-instead-write-everything-twice-wet-5g33) 
+- [YAGNI](https://www.itexico.com/blog/software-development-kiss-yagni-dry-3-principles-to-simplify-your-life) 
+- [AHA](https://kentcdodds.com/blog/aha-programming) 
+    - [More on the topic](https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction)
+    - Deliver something that works and that you understand first, optimize second
+- Always check if someone else has solved your problem
+    - Online communities sharing `R` knowledge
+
