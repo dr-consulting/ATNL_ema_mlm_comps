@@ -1,22 +1,26 @@
 ---
-title: "Preface"
+title: "A Statistical Starter Kit for Modeling Ecological Momentary Assessments"
+subtitle: "Tutorials using R"
+date: "`r Sys.Date()`"
 author: "Matthew Barstead, Ph.D."
-output: html_document
+output: bookdown::gitbook
 ---
-# Preface 
+# Preface {-} 
 
-## Why Every Model Will Soon Be A Multilevel Model
+## Who is This For? {-}
+This series of tutorials are a work in progress. The focal audience includes the members of the [Affective and Translational Neuroscience Laboratory](https://shackmanlab.org/) at the University of Maryland, headed by [Dr. Alexander Shackman](https://psyc.umd.edu/facultyprofile/shackman/alexander). That being said, the contents are open for use and available to anyone looking to survey different analytical approaches to working with psychological and behavioral data that involve repeated/intensive data collection protocols. 
 
-## Getting Started 
+## Who is Writing This Stuff? {-} 
+**Matthew Barstead, Ph.D.**: I graduated from the University of Maryland, receiving my Ph.D. from the Department of Human Development & Quantitative Methodology. I eventually took my talents to the private sector where my full-time job as a Data Scientist and Software Developer keeps me busy from 9 to 5 most days. I started up a side consulting business during my transition out of academia called [Dead Reckoning Analytics & Consulting](https://www.deadreckoning.consulting/). I chose the name because I used to be a sailing instructor in a prior life and the notion of effective navigation when presented with limited information accurately summarized my lived experience in data science and statistical modeling. I work with clients who need help with data science and modeling projects, adhering to open science/open source practices and principles as often as I can. 
 
-### Installation and Technical Setup
+## Installation and Technical Setup {-}
 - R 
 - RStudio
 - Stan (special instructions for Windows)
 - `tidyverse` vs. "base" `R`
 - Git - up to user to decide how (expand on README.md instructions)
 
-### Coding Style 
+## Coding Style {-}
 - [Advanced R - Style Guide](http://adv-r.had.co.nz/Style.html)
 - [WET and DRY code](https://dev.to/wuz/stop-trying-to-be-so-dry-instead-write-everything-twice-wet-5g33) 
 - [YAGNI](https://www.itexico.com/blog/software-development-kiss-yagni-dry-3-principles-to-simplify-your-life) 

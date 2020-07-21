@@ -1,0 +1,32 @@
+# The Linear Model 
+
+>You mistook the stars reflected in a pond for the night sky. 
+- Andrzej Sapkowski, *The Witcher* series
+
+## Start at the Beginning {-}
+For some reason every time I learned about statistics, we always began with mean comparisons. As my training progressed, it became clear how some statistical analysis I had learned under a different name (e.g., ANOVA or *t*-test) was really just a reflection of a linear regression model, constrained by certain properties of the data. Linear regression models are actually the connective tissue binding seemingly disparate families of models together, and most students do not get the benefit of seeing this scaffolding until after they've been trained to choose between models [link to analytic decision tree].  
+
+Since these tutorials dabble in a series of advanced topics, each with their own constellation of textbooks and courses, the starting assumption is that the reader has a sense of how enormous the universe of linear models is. For those who feel comfortable with their knowledge base below, feel free to skip along to subsequent sections. 
+
+## Chapter Organization {-}
+
+```{block, type="rmdtip"}
+- Assumptions of the Linear Model
+- Ordinary Least Squares Estimation
+- Testing Assumptions
+- What Happens When Assumptions are Violated
+- Generalized Forms of the Linear Model
+```
+
+## Assumptions of the Linear Model
+(under construction)
+
+## Ordinary Least Squares Estimation
+(under construction)
+
+## Testing Assumptions
+(under construction)
+
+## Addressing Violated Assumptions
+
+## Generalized Forms of the Linear Model

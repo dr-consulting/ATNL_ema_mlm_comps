@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Content | A Statistical Starter Kit for Modeling Ecological Momentary Assessments</title>
+  <meta name="description" content="Content | A Statistical Starter Kit for Modeling Ecological Momentary Assessments" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Content | A Statistical Starter Kit for Modeling Ecological Momentary Assessments" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Content | A Statistical Starter Kit for Modeling Ecological Momentary Assessments" />
+  
+  
+  
+
+<meta name="author" content="Matthew Barstead, Ph.D." />
+
+
+<meta name="date" content="2020-07-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="the-linear-model.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-is-this-for"><i class="fa fa-check"></i>Who is This For?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#who-is-writing-this-stuff"><i class="fa fa-check"></i>Who is Writing This Stuff?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#installation-and-technical-setup"><i class="fa fa-check"></i>Installation and Technical Setup</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#coding-style"><i class="fa fa-check"></i>Coding Style</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="content.html"><a href="content.html"><i class="fa fa-check"></i>Content</a><ul>
+<li class="chapter" data-level="" data-path="content.html"><a href="content.html#part-i"><i class="fa fa-check"></i>Part I</a><ul>
+<li class="chapter" data-level="0.0.1" data-path="content.html"><a href="content.html#chapter-2---generalzied-linear-models-dealing-with-naturally-skewed-count-and-ordinal-outcomes"><i class="fa fa-check"></i><b>0.0.1</b> Chapter 2 - Generalzied Linear Models: Dealing with Naturally Skewed, Count and Ordinal Outcomes</a></li>
+<li class="chapter" data-level="0.0.2" data-path="content.html"><a href="content.html#chapter-3---generalized-linear-models-predicting-categories"><i class="fa fa-check"></i><b>0.0.2</b> Chapter 3 - Generalized Linear Models: Predicting Categories</a></li>
+<li class="chapter" data-level="0.0.3" data-path="content.html"><a href="content.html#chapter-4"><i class="fa fa-check"></i><b>0.0.3</b> Chapter 4</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="content.html"><a href="content.html#part-ii"><i class="fa fa-check"></i>Part II</a><ul>
+<li class="chapter" data-level="0.0.4" data-path="content.html"><a href="content.html#chapter-5-the-basics---a-multilevel-model-with-random-intercepts"><i class="fa fa-check"></i><b>0.0.4</b> Chapter 5 The Basics - A Multilevel Model with Random Intercepts</a></li>
+<li class="chapter" data-level="0.0.5" data-path="content.html"><a href="content.html#chapter-6-a-small-step-forward---introducing-random-slopes"><i class="fa fa-check"></i><b>0.0.5</b> Chapter 6 A Small Step Forward - Introducing Random Slopes</a></li>
+<li class="chapter" data-level="0.0.6" data-path="content.html"><a href="content.html#chapter-7---growth-models"><i class="fa fa-check"></i><b>0.0.6</b> Chapter 7 - “Growth” Models</a></li>
+<li class="chapter" data-level="0.0.7" data-path="content.html"><a href="content.html#chapter-8---structural-equation-models"><i class="fa fa-check"></i><b>0.0.7</b> Chapter 8 - Structural Equation Models</a></li>
+<li class="chapter" data-level="0.0.8" data-path="content.html"><a href="content.html#chapter-9---complex-nesting-structures"><i class="fa fa-check"></i><b>0.0.8</b> Chapter 9 - Complex Nesting Structures</a></li>
+<li class="chapter" data-level="0.0.9" data-path="content.html"><a href="content.html#chapter-10-interpreting-your-model---picture-words"><i class="fa fa-check"></i><b>0.0.9</b> Chapter 10 Interpreting your Model - Picture &gt; Words</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="content.html"><a href="content.html#part-iii"><i class="fa fa-check"></i>Part III</a><ul>
+<li class="chapter" data-level="0.0.10" data-path="content.html"><a href="content.html#chapter-11-thomas-bayes---rolls-up-his-sleeves"><i class="fa fa-check"></i><b>0.0.10</b> Chapter 11 Thomas Bayes - Rolls up his sleeves</a></li>
+<li class="chapter" data-level="0.0.11" data-path="content.html"><a href="content.html#chapter-12-optional---resources-for-plotting-results-of-bayesian-models"><i class="fa fa-check"></i><b>0.0.11</b> Chapter 12 (Optional) - Resources for Plotting Results of Bayesian Models</a></li>
+<li class="chapter" data-level="0.0.12" data-path="content.html"><a href="content.html#chapter-13-sem-advanced-time-series-analyses"><i class="fa fa-check"></i><b>0.0.12</b> Chapter 13 SEM Advanced Time-Series Analyses</a></li>
+<li class="chapter" data-level="0.0.13" data-path="content.html"><a href="content.html#chapter-x---meta-analyses---variance-known-mlms-stretch---may-remove"><i class="fa fa-check"></i><b>0.0.13</b> Chapter X - Meta Analyses - “Variance Known” MLMs (stretch - may remove)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="the-linear-model.html"><a href="the-linear-model.html"><i class="fa fa-check"></i><b>1</b> The Linear Model</a><ul>
+<li class="chapter" data-level="1.1" data-path="the-linear-model.html"><a href="the-linear-model.html#start-at-the-beginning"><i class="fa fa-check"></i><b>1.1</b> Start at the Beginning</a></li>
+<li class="chapter" data-level="" data-path="the-linear-model.html"><a href="the-linear-model.html#chapter-organization"><i class="fa fa-check"></i>Chapter Organization</a></li>
+<li class="chapter" data-level="1.2" data-path="the-linear-model.html"><a href="the-linear-model.html#assumptions-of-the-linear-model"><i class="fa fa-check"></i><b>1.2</b> Assumptions of the Linear Model</a></li>
+<li class="chapter" data-level="1.3" data-path="the-linear-model.html"><a href="the-linear-model.html#ordinary-least-squares-estimation"><i class="fa fa-check"></i><b>1.3</b> Ordinary Least Squares Estimation</a></li>
+<li class="chapter" data-level="1.4" data-path="the-linear-model.html"><a href="the-linear-model.html#testing-assumptions"><i class="fa fa-check"></i><b>1.4</b> Testing Assumptions</a></li>
+<li class="chapter" data-level="1.5" data-path="the-linear-model.html"><a href="the-linear-model.html#addressing-violated-assumptions"><i class="fa fa-check"></i><b>1.5</b> Addressing Violated Assumptions</a></li>
+<li class="chapter" data-level="1.6" data-path="the-linear-model.html"><a href="the-linear-model.html#generalized-forms-of-the-linear-model"><i class="fa fa-check"></i><b>1.6</b> Generalized Forms of the Linear Model</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Statistical Starter Kit for Modeling Ecological Momentary Assessments</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="content" class="section level1 unnumbered">
+<h1>Content</h1>
+<ul>
+<li>1-3 Paragraphs per chapter (will probably finish last)</li>
+</ul>
+<div id="part-i" class="section level2 unnumbered">
+<h2>Part I</h2>
+<div id="chapter-2---generalzied-linear-models-dealing-with-naturally-skewed-count-and-ordinal-outcomes" class="section level3">
+<h3><span class="header-section-number">0.0.1</span> Chapter 2 - Generalzied Linear Models: Dealing with Naturally Skewed, Count and Ordinal Outcomes</h3>
+<ul>
+<li>Psychopathology ratings/scores</li>
+<li>Count (Poisson &amp; Negative Binomial)</li>
+<li>Ordinal (Cumulative Distribution Link Functions)</li>
+</ul>
+</div>
+<div id="chapter-3---generalized-linear-models-predicting-categories" class="section level3">
+<h3><span class="header-section-number">0.0.2</span> Chapter 3 - Generalized Linear Models: Predicting Categories</h3>
+<ul>
+<li>Binary data</li>
+<li>Mutinomial</li>
+</ul>
+</div>
+<div id="chapter-4" class="section level3">
+<h3><span class="header-section-number">0.0.3</span> Chapter 4</h3>
+<ul>
+<li>First and Second Moments of Repeated Measures Distributions
+<ul>
+<li><a href="https://www.nature.com/articles/s41562-019-0555-0">Dejonckheere et al., 2019</a></li>
+<li><a href="https://ppw.kuleuven.be/okp/_pdf/Houben2015TRBST.pdf">Houben et al., 2015</a></li>
+</ul></li>
+<li>Non-linear Models
+<ul>
+<li><a href="https://www.scirp.org/html/2-6902926_96985.htm">Kira et al., 2019</a></li>
+<li><a href="https://link.springer.com/chapter/10.1007/978-1-4614-4998-0_9#citeas">Guastello, 2013</a></li>
+</ul></li>
+<li>Time-series Analyses
+<ul>
+<li><a href="https://www.nature.com/articles/s41598-020-62225-2">Ghiasi et al., 2020</a></li>
+<li><a href="https://www.pnas.org/content/117/28/16273">Puterman et al., 2020</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="part-ii" class="section level2 unnumbered">
+<h2>Part II</h2>
+<div id="chapter-5-the-basics---a-multilevel-model-with-random-intercepts" class="section level3">
+<h3><span class="header-section-number">0.0.4</span> Chapter 5 The Basics - A Multilevel Model with Random Intercepts</h3>
+<ul>
+<li>Fancy Name for an ANOVA</li>
+<li>The statistical model</li>
+<li>Translating the statiscal model to code</li>
+<li>Checking model assumptions</li>
+<li>ANCOVA and Model Comparisons</li>
+</ul>
+</div>
+<div id="chapter-6-a-small-step-forward---introducing-random-slopes" class="section level3">
+<h3><span class="header-section-number">0.0.5</span> Chapter 6 A Small Step Forward - Introducing Random Slopes</h3>
+<ul>
+<li>Moving Past the ANOVA</li>
+<li>The statistical model</li>
+<li>Random Effects Covariance Matrix and <a href="https://psycnet.apa.org/record/2018-32178-001">Decomposition</a></li>
+<li>Centering Choices</li>
+<li>Adding Covariates/Predictors</li>
+<li>Checking model assumptions</li>
+</ul>
+</div>
+<div id="chapter-7---growth-models" class="section level3">
+<h3><span class="header-section-number">0.0.6</span> Chapter 7 - “Growth” Models</h3>
+<ul>
+<li>The special properties of time as a variable</li>
+<li>Centering</li>
+<li>Effects on Random Covariance/Correlation Matrix</li>
+<li>RCT/Experiments with Repeated Measures</li>
+<li>Non-linear change</li>
+<li>“lagged” predictors</li>
+</ul>
+</div>
+<div id="chapter-8---structural-equation-models" class="section level3">
+<h3><span class="header-section-number">0.0.7</span> Chapter 8 - Structural Equation Models</h3>
+<ul>
+<li>SEM Crash Course: Path Models, Fit Indices, “Latent” variables</li>
+<li>Multilevel Factor Analysis - Structure and Theory</li>
+<li>SEM version of a Growth Model</li>
+<li>Parallel Growth Processes</li>
+<li>Inflection Point Detection Models</li>
+<li>Convergence Point Detection Models</li>
+<li>Further Reading</li>
+</ul>
+</div>
+<div id="chapter-9---complex-nesting-structures" class="section level3">
+<h3><span class="header-section-number">0.0.8</span> Chapter 9 - Complex Nesting Structures</h3>
+<ul>
+<li>Adding a third “level” to a model</li>
+<li>The statistical model</li>
+<li>Translating to Code</li>
+<li>Understanding the Multiple Random Effect Covariance Matrices</li>
+<li>Cross-nested structures</li>
+<li>Individuals, Measured over Time, Nested within groups</li>
+</ul>
+</div>
+<div id="chapter-10-interpreting-your-model---picture-words" class="section level3">
+<h3><span class="header-section-number">0.0.9</span> Chapter 10 Interpreting your Model - Picture &gt; Words</h3>
+<ul>
+<li>Stacked barplots (boo!!) Riverplots (yay!!)</li>
+<li>When the Random effects are the interesting part of the model - catepillar plots</li>
+<li>Be certain to include your uncertainty</li>
+</ul>
+</div>
+</div>
+<div id="part-iii" class="section level2 unnumbered">
+<h2>Part III</h2>
+<div id="chapter-11-thomas-bayes---rolls-up-his-sleeves" class="section level3">
+<h3><span class="header-section-number">0.0.10</span> Chapter 11 Thomas Bayes - Rolls up his sleeves</h3>
+<ul>
+<li>Philosophical and theoretical distinctions between Frequentist and Bayesian</li>
+<li>The mechanics change but the syntax remains the same</li>
+<li>Setting reasonable priors</li>
+<li>Assessing model performance</li>
+<li>Why multilevel models have a naturally Bayesian Form</li>
+<li>Pros and cons</li>
+<li>Further Reading</li>
+</ul>
+</div>
+<div id="chapter-12-optional---resources-for-plotting-results-of-bayesian-models" class="section level3">
+<h3><span class="header-section-number">0.0.11</span> Chapter 12 (Optional) - Resources for Plotting Results of Bayesian Models</h3>
+</div>
+<div id="chapter-13-sem-advanced-time-series-analyses" class="section level3">
+<h3><span class="header-section-number">0.0.12</span> Chapter 13 SEM Advanced Time-Series Analyses</h3>
+<ul>
+<li>Latent Change Score Models</li>
+<li>Non-linear change in SEM</li>
+<li>Change as a mediator in SEM</li>
+<li>Multivariate Bayesian Multilevel Regression</li>
+</ul>
+</div>
+<div id="chapter-x---meta-analyses---variance-known-mlms-stretch---may-remove" class="section level3">
+<h3><span class="header-section-number">0.0.13</span> Chapter X - Meta Analyses - “Variance Known” MLMs (stretch - may remove)</h3>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-linear-model.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
