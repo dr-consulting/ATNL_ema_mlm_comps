@@ -3,25 +3,9 @@
 
 ## Part I {-}
 
-### Chapter 2 - Generalzied Linear Models: Dealing with Naturally Skewed, Count and Ordinal Outcomes
-- Psychopathology ratings/scores
-- Count (Poisson & Negative Binomial)
-- Ordinal (Cumulative Distribution Link Functions)
+Will re-hash the basics of regression models, focusing of features of what are often more familiar models that get expanded and built on in subsequent tutorials. At the end of these tutorials, will have a basic handle on linear regression models, generalized forms of linear regression, and maximum likelihood estimation. 
 
-### Chapter 3 - Generalized Linear Models: Predicting Categories
-- Binary data
-- Mutinomial
-
-### Chapter 4
-- First and Second Moments of Repeated Measures Distributions
-    - [Dejonckheere et al., 2019](https://www.nature.com/articles/s41562-019-0555-0)
-    - [Houben et al., 2015](https://ppw.kuleuven.be/okp/_pdf/Houben2015TRBST.pdf)
-- Non-linear Models
-    - [Kira et al., 2019](https://www.scirp.org/html/2-6902926_96985.htm)
-    - [Guastello, 2013](https://link.springer.com/chapter/10.1007/978-1-4614-4998-0_9#citeas)
-- Time-series Analyses
-    - [Ghiasi et al., 2020](https://www.nature.com/articles/s41598-020-62225-2)
-    - [Puterman et al., 2020](https://www.pnas.org/content/117/28/16273)
+The end of the section will begin a transition to multilevel modeling by using a repeated measure ANOVA to highlight the transition from OLS estimation to a more general formulation of the logLikelihood function. 
 
 ## Part II {-}
 
@@ -90,3 +74,14 @@
 - Multivariate Bayesian Multilevel Regression
 
 ### Chapter X - Meta Analyses - "Variance Known" MLMs (stretch - may remove)
+
+### Resources: 
+- First and Second Moments of Repeated Measures Distributions
+    - [Dejonckheere et al., 2019](https://www.nature.com/articles/s41562-019-0555-0)
+    - [Houben et al., 2015](https://ppw.kuleuven.be/okp/_pdf/Houben2015TRBST.pdf)
+- Non-linear Models
+    - [Kira et al., 2019](https://www.scirp.org/html/2-6902926_96985.htm)
+    - [Guastello, 2013](https://link.springer.com/chapter/10.1007/978-1-4614-4998-0_9#citeas)
+- Time-series Analyses
+    - [Ghiasi et al., 2020](https://www.nature.com/articles/s41598-020-62225-2)
+    - [Puterman et al., 2020](https://www.pnas.org/content/117/28/16273)

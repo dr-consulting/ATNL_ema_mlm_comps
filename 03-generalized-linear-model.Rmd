@@ -1,0 +1,17 @@
+# Generalized Linear Models
+
+>Nature abhors a straight line
+- William Kent
+
+## The Magic of Lines {-}
+Nature may abhor a straight line, but a statistician often seeks them out, even when they are otherwise hard to find. 
+
+## Chapter Organization {-}
+
+```{block, type="rmdtip"}
+- log link & Poisson Regressions
+- Zero-Inflated Poisson and Negative Binomial Models
+- Cumulative Distributions for Ordinal Data
+- Logistic regressions: Binomial and Multinomial
+- Survey of Other Generalized Forms
+```

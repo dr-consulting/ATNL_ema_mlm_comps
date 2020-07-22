@@ -15,7 +15,6 @@ Since these tutorials dabble in a series of advanced topics, each with their own
 - Ordinary Least Squares Estimation
 - Testing Assumptions
 - What Happens When Assumptions are Violated
-- Generalized Forms of the Linear Model
 ```
 
 ## Assumptions of the Linear Model
@@ -28,5 +27,3 @@ Since these tutorials dabble in a series of advanced topics, each with their own
 (under construction)
 
 ## Addressing Violated Assumptions
-
-## Generalized Forms of the Linear Model

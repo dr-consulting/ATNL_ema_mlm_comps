@@ -1,0 +1,17 @@
+# Maximum Likelihood
+
+>An approximate answer to the right problem is worth a good deal more than an exact answer to an approximate problem. 
+- John Tukey
+
+## The Inferential Engine {-}
+Given data and model, what are the maximally likely parameters for that model in the population. 
+
+## Chapter Organization {-}
+
+```{block, type="rmdtip"}
+- Ordinary Least Squares as a Special Case
+- General Form of logLikelihood Function
+- Restricted Maximum Likelihood
+- Deviance, Information Criteria, and Model Comparisons
+- Repeated Measures - from OLS to ML 
+```
