@@ -1,0 +1,67 @@
+# Multilevel Models: Varying Intercepts
+
+>If statistics are boring, you've go the wrong numbers
+- Edward Tufte
+
+## A solution to non-independence
+- independent and identically distributed random variables
+- exchangeability 
+
+## Chapter Organization {-}
+
+```{block, type="rmdtip"}
+- Benefits of multilevel models over alternatives 
+- Tadpole Survival
+- Partial Pooling: Putting the "P" in the Pool
+- How to Understand Your Model: Make Stuff Up
+- Multiple Sources of Intercept Variance
+```
+
+## Benefits of Multilevel Models over Alternatives
+### Better Mapping of Data Structure to Inferential Model
+- Fewer transformations required
+- Model takes on properties that are naturally reflected in the (either via collection processes or the data generation mechansims)
+
+### Estimate Sources of Variation at Multiple Levels
+- Most phenomena of interest arise due a mix of complex and interacting factors. Mutlilevel models offer a framework for understanding varying casual, confounding, and interactive processes involved in generating the data we are interested in. 
+
+### Improved Out of Sample Accuracy
+- Not a silver bullet, but models tend to be more accurate in terms of recovering true parameter estimates and are more "honest" about the uncertainty around those estimates than alternatives. 
+
+## Tadpoles 
+Data and analyses adapted from Statistical Rethinking (pp. 401-415). This walkthrough extends the example in McElreath's text to specificying equivalent models in `lme4` and `brms` packages. Brief comparisons between these and `ulam` are generated throughout, with the focus being _largely_ on similarities. 
+
+```{r load, message=FALSE, warning=FALSE}
+library(brms)
+library(lme4)
+library(rethinking)
+library(tidyverse)
+
+data(reedfrogs)
+df <- reedfrogs
+head(df)
+df$pond <- 1:nrow(df)
+```
+
+The goal here is to better undertand tadpole mortality. We are using a multilevel modeling approach here to address the fact that tadpoles from the same pond are more likely to experience similar outcomes (including death) than tadpoles from different ponds. The ecological determinants of tadpole well-being. 
+
+### The lme4 Version
+The multilevel structure may not be obvious when intially examining the data. In typical multilevel data sets, there is usually one row per observation at the lowest level of the model structure, and an indexing variable or set of variables that organizing the hierarchical structure. The `reedfrogs` data set contains one row per cluster (pond in this case). 
+
+However, the data contain everything we need to create a multilevel binomial (logistic) regression in this case. When conducting this analysis using the `lme4` package, we'll need to appopriate "weight" the data. When using Bayesian versions of the model the weighting occurs naturally through the pooling of distributions of cluster-level effects. 
+```{r lme4}
+# Note the use of weights term here
+form <- "propsurv ~ 1 + (1|pond)"
+m5_1 <- glmer(form, data = df, family = "binomial", weights = density)
+summary(m5_1)
+```
+
+Hmmmm... a troublesome convergence issue. This can happen often with `glmer` models. The lowest effort way to address the problem is to attempt to refit and tweak the optimizer. For additional information and resources see: https://rstudio-pubs-static.s3.amazonaws.com/33653_57fc7b8e5d484c909b615d8633c01d51.html
+
+```{r}
+m5_1a <- glmer(form, data = df, family = "binomial", weights = density, 
+               glmerControl(optimizer = "optimx",
+                            optCtrl = list(method="nlminb")))
+summary(m5_1a)
+```
+A much more reasonable result. 
